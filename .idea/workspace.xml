@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="second and third task">
-      <change beforePath="$PROJECT_DIR$/secondTask/src/main/java/ru/sleed/secondtask/SecondTaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/secondTask/src/main/java/ru/sleed/secondtask/SecondTaskApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="second2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680904729170</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second">
+      <created>1681244755762</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681244755762</updated>
+    </task>
+    <task id="LOCAL-00003" summary="second2">
+      <created>1681244892654</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681244892654</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +154,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="second" />
+    <MESSAGE value="second2" />
+    <option name="LAST_COMMIT_MESSAGE" value="second2" />
   </component>
 </project>
