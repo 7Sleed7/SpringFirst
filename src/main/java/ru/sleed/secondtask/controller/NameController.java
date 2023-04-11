@@ -20,5 +20,6 @@ public class NameController {
     @GetMapping("getName")
     public String getString(@RequestParam("name") String name) {
         return serviceImpl.nameCreation(name);
+
     }
 }
