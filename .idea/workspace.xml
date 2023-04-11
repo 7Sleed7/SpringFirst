@@ -4,29 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstTask/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstTask/src/main/java/ru/sleed/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstTask/src/main/java/ru/sleed/CarEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstTask/src/main/java/ru/sleed/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firstTask/src/main/java/ru/sleed/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/src/main/java/ru/sleed/secondtask/SecondTaskApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/secondTask/src/test/java/ru/sleed/secondtask/SecondTaskApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springApp.iml" afterDir="false" />
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="first">
+      <change afterPath="$PROJECT_DIR$/secondTask/src/main/java/ru/sleed/secondtask/controller/NameController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secondTask/src/main/java/ru/sleed/secondtask/service/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/secondTask/src/main/java/ru/sleed/secondtask/service/impl/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/ThridTaskApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/UserController/SpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/test/java/ru/sleed/thridtask/ThridTaskApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +35,29 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/secondTask" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/thridTask" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2O3ILXEfLhWPuwxliNRL4LOy8Pe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -54,6 +67,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -62,9 +79,45 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "show.run.dashboard.notification": "false",
     "spring.configuration.checksum": "ab088ee69c51e9415a270fbd75f5b952"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory",
+      "repository"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ThridTaskApplication">
+    <configuration name="SecondTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="secondTask" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sleed.secondtask.SecondTaskApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThirdTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="thirdTask" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sleed.thirdtask.ThirdTaskApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThridTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="thridTask" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sleed.thridtask.ThridTaskApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,8 +127,17 @@
       <option name="presentableId" value="Default" />
       <updated>1680782784062</updated>
       <workItem from="1680782785184" duration="3208000" />
-      <workItem from="1680902039218" duration="1788000" />
+      <workItem from="1680902039218" duration="2098000" />
+      <workItem from="1680942918510" duration="9958000" />
     </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1680904729170</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680904729170</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,10 +148,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
   </component>
 </project>
