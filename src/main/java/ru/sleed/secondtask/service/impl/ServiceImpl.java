@@ -7,6 +7,6 @@ import ru.sleed.secondtask.service.TestService;
 public class ServiceImpl implements TestService {
     @Override
     public String nameCreation(String name) {
-        return "Ur name is: " + name;
+        return "name is: " + name;
     }
 }
