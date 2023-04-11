@@ -21,5 +21,4 @@ public class NameController {
     public String getString(@RequestParam("name") String name) {
         return serviceImpl.nameCreation(name);
     }
-
 }
