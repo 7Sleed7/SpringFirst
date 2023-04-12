@@ -1,5 +1,6 @@
 package ru.sleed.thridtask.UserController;
 
+import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.web.bind.annotation.*;
 import ru.sleed.thridtask.entity.User;
 
@@ -10,7 +11,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/users") //fix
 public class SpController {
     private final List<User> users = new ArrayList<>();
 
