@@ -11,13 +11,14 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/users") //fix
+@RequestMapping("/userList") //fix
 public class SpController {
     private final List<User> users = new ArrayList<>();
 
     @GetMapping
     public List<User> getAllUsers() {
-        return users;
+        List<User> toSee = users;
+        return toSee;
     }
 
     @GetMapping("/{id}")
