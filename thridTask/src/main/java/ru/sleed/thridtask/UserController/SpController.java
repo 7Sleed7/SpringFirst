@@ -1,7 +1,9 @@
 package ru.sleed.thridtask.UserController;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import ru.sleed.thridtask.entity.User;
 
 
@@ -11,7 +13,7 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/userList") //fix
+@RequestMapping("/userList")
 public class SpController {
     private final List<User> users = new ArrayList<>();
 
@@ -22,9 +24,11 @@ public class SpController {
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable Long id) {
+    public User getUserById(@PathVariable Long id) {
         return users.stream()
-                .filter(u -> u.getId().equals(id)).findFirst();
+                .filter(u -> u.getId().equals(id))
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
     }
 
     @PostMapping
@@ -38,7 +42,7 @@ public class SpController {
         User existingUser = users.stream()
                 .filter(u -> u.getId().equals(id))
                 .findFirst()
-                .orElseThrow();
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
 
         existingUser.setName(user.getName());
         existingUser.setAge(user.getAge());
@@ -47,18 +51,19 @@ public class SpController {
     }
 
     @PatchMapping("/{id}")
-    public Optional<User> patchUser(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
-        Optional<User> existingUser = users.stream()
+    public User patchUser(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
+            User existingUser = users.stream()
                 .filter(u -> u.getId().equals(id))
-                .findFirst();
+                .findFirst()
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Task not found"));
 
         updates.forEach((key, value) -> {
             switch (key) {
                 case "name":
-                    existingUser.orElseThrow().setName((String) value);
+                    existingUser.setName((String) value);
                     break;
                 case "age":
-                    existingUser.orElseThrow().setAge((Integer) value);
+                    existingUser.setAge((Integer) value);
                     break;
             }
         });
