@@ -55,7 +55,7 @@ public class SpController {
             User existingUser = users.stream()
                 .filter(u -> u.getId().equals(id))
                 .findFirst()
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Task not found"));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
 
         updates.forEach((key, value) -> {
             switch (key) {
