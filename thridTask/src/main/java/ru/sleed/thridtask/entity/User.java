@@ -1,10 +1,8 @@
 package ru.sleed.thridtask.entity;
 
 import lombok.*;
-import org.springframework.stereotype.Component;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {

@@ -8,6 +8,7 @@ public class AppException extends RuntimeException {
     private ExceptionMessage appException;
 
     public AppException(ExceptionMessage exceptionMessage){
+        super();
         this.appException = exceptionMessage;
     }
 }

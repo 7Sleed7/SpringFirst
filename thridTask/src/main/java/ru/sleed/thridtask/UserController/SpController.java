@@ -1,7 +1,6 @@
 package ru.sleed.thridtask.UserController;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.client.ClientHttpRequestExecution;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import ru.sleed.thridtask.entity.User;
@@ -10,7 +9,6 @@ import ru.sleed.thridtask.entity.User;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/userList")
@@ -44,10 +42,10 @@ public class SpController {
                 .findFirst()
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "User not found"));
 
-        existingUser.setName(user.getName());
+        existingUser.setName(user.getName()); //
         existingUser.setAge(user.getAge());
 
-        return existingUser;
+        return existingUser; // в сервис унести
     }
 
     @PatchMapping("/{id}")
