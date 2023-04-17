@@ -1,9 +1,9 @@
-package ru.sleed.thridtask.UserController;
+package ru.sleed.thridtask.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import ru.sleed.thridtask.entity.User;
+import ru.sleed.thridtask.model.User;
 
 
 import java.util.ArrayList;

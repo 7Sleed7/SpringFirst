@@ -1,4 +1,4 @@
-package ru.sleed.thridtask.entity;
+package ru.sleed.thridtask.model;
 
 import lombok.*;
 
