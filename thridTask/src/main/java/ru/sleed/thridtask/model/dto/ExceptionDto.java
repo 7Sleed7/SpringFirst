@@ -7,7 +7,7 @@ import ru.sleed.thridtask.exeption.ApplicationException;
 
 @Data
 @AllArgsConstructor
-public class ExceptionDto {
+public class ExceptionDto extends Throwable{
     private String exceptionMessage;
     private HttpStatus status;
 
