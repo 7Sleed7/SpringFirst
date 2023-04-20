@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="ExceptionHandler">
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="testingFirst">
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thridTask/src/test/java/ru/sleed/thridtask/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/controller/advice/ControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/controller/advice/ControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/exeption/ExceptionMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/exeption/ExceptionMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +131,8 @@
       <workItem from="1681244953132" duration="1790000" />
       <workItem from="1681283507698" duration="8547000" />
       <workItem from="1681461125150" duration="12363000" />
-      <workItem from="1681802734429" duration="1318000" />
+      <workItem from="1681802734429" duration="3537000" />
+      <workItem from="1681887365451" duration="12909000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1680904729170</created>
@@ -226,7 +232,28 @@
       <option name="project" value="LOCAL" />
       <updated>1681803482869</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ExceptionHandlerSecond">
+      <created>1681804352316</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681804352316</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Exceptions">
+      <created>1681804583518</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1681804583518</updated>
+    </task>
+    <task id="LOCAL-00017" summary="FieldsFix&amp;ControllerAdvice">
+      <created>1681983426754</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1681983426754</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,9 +288,12 @@
     <MESSAGE value="ThirdPomFix" />
     <MESSAGE value="ThirdControllerFix" />
     <MESSAGE value="ThirdControllerFix2" />
-    <MESSAGE value="Exceptions" />
     <MESSAGE value="Controlleradvice" />
     <MESSAGE value="ExceptionHandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="ExceptionHandler" />
+    <MESSAGE value="ExceptionHandlerSecond" />
+    <MESSAGE value="Exceptions" />
+    <MESSAGE value="FieldsFix&amp;ControllerAdvice" />
+    <MESSAGE value="testingFirst" />
+    <option name="LAST_COMMIT_MESSAGE" value="testingFirst" />
   </component>
 </project>
