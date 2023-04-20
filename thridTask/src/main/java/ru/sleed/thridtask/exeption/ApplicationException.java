@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class ApplicationException extends RuntimeException {
 
-    private ExceptionMessage appException;
+    private ExceptionMessage exceptionMessage;
 
     public ApplicationException(ExceptionMessage exceptionMessage){
         super();
-        this.appException = exceptionMessage;
+        this.exceptionMessage = exceptionMessage;
     }
 }

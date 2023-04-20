@@ -8,10 +8,10 @@ public enum ExceptionMessage {
     USER_NOT_FOUND(HttpStatus.NOT_FOUND, "User not found");
 
     private final HttpStatus httpStatus;
-    private final String message;
+    private final String exceptionMessage;
 
-    ExceptionMessage(HttpStatus httpStatus, String message) {
-        this.httpStatus = httpStatus;
-        this.message = message;
+    ExceptionMessage(HttpStatus status, String exceptionMessage) {
+        this.httpStatus = status;
+        this.exceptionMessage = exceptionMessage;
     }
 }
