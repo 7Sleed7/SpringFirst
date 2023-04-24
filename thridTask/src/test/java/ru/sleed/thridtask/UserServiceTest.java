@@ -10,6 +10,9 @@ import ru.sleed.thridtask.repository.UserRepository;
 import ru.sleed.thridtask.service.impl.UserServiceImpl;
 
 import java.util.List;
+import java.util.Optional;
+
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTest {
@@ -23,5 +26,6 @@ public class UserServiceTest {
     public void getAllUsers(){
         List<User> users = service.get();
         System.out.println(users);
+
     }
 }
