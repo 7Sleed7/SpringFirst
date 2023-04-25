@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="TestingTaskApplicationSecond">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingTask/src/main/java/ru/sleed/testingtask/repositroy/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/testingTask/src/main/java/ru/sleed/testingtask/repositroy/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testingTask/src/test/java/ru/sleed/testingtask/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testingTask/src/test/java/ru/sleed/testingtask/UserServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="TestingTaskApplicationThird" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +220,7 @@
       <workItem from="1681461125150" duration="12363000" />
       <workItem from="1681802734429" duration="3537000" />
       <workItem from="1681887365451" duration="5572000" />
-      <workItem from="1682405014785" duration="2679000" />
+      <workItem from="1682405014785" duration="3020000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1680904729170</created>
@@ -359,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682365084662</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="TestingTaskApplicationThird">
+      <created>1682414693289</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1682414693289</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +404,7 @@
     <MESSAGE value="testingSecond" />
     <MESSAGE value="TestingTaskApplication" />
     <MESSAGE value="TestingTaskApplicationSecond" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestingTaskApplicationSecond" />
+    <MESSAGE value="TestingTaskApplicationThird" />
+    <option name="LAST_COMMIT_MESSAGE" value="TestingTaskApplicationThird" />
   </component>
 </project>
