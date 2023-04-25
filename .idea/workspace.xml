@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="TestingTaskApplication" />
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="TestingTaskApplicationSecond">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testingTask/src/main/java/ru/sleed/testingtask/repositroy/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/testingTask/src/main/java/ru/sleed/testingtask/repositroy/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testingTask/src/test/java/ru/sleed/testingtask/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/testingTask/src/test/java/ru/sleed/testingtask/UserServiceTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,33 +58,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;05d21181ed6c478113a970bd2485842b&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.run.dashboard.notification": "false",
+    "spring.configuration.checksum": "95d6b47eac34597a0681871a495e4a81"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;,
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory",
+      "repository"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -102,6 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest.createUser_whenCorrectUser_thanCreate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testingTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sleed.testingtask.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sleed.testingtask" />
+      <option name="MAIN_CLASS_NAME" value="ru.sleed.testingtask.UserServiceTest" />
+      <option name="METHOD_NAME" value="createUser_whenCorrectUser_thanCreate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest.getById_whenIdExists_thanId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="testingTask" />
       <extension name="coverage">
@@ -113,22 +133,6 @@
       <option name="PACKAGE_NAME" value="ru.sleed.testingtask" />
       <option name="MAIN_CLASS_NAME" value="ru.sleed.testingtask.UserServiceTest" />
       <option name="METHOD_NAME" value="getById_whenIdExists_thanId" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.getUserById_whenUserExists_thanUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="testingTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.sleed.testingtask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.sleed.testingtask" />
-      <option name="MAIN_CLASS_NAME" value="ru.sleed.testingtask.UserServiceTest" />
-      <option name="METHOD_NAME" value="getUserById_whenUserExists_thanUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -197,10 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.UserServiceTest.createUser_whenCorrectUser_thanCreate" />
         <item itemvalue="JUnit.UserServiceTest.getUserByName_whenUserNotExists_thanException" />
         <item itemvalue="JUnit.UserServiceTest.getById_whenIdExists_thanId" />
         <item itemvalue="JUnit.UserServiceTest.getUserByName_whenUserExists_thanUser" />
-        <item itemvalue="JUnit.UserServiceTest.getUserById_whenUserExists_thanUser" />
       </list>
     </recent_temporary>
   </component>
@@ -220,6 +224,7 @@
       <workItem from="1681461125150" duration="12363000" />
       <workItem from="1681802734429" duration="3537000" />
       <workItem from="1681887365451" duration="5572000" />
+      <workItem from="1682405014785" duration="2679000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1680904729170</created>
@@ -347,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682364856762</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="TestingTaskApplicationSecond">
+      <created>1682365084662</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1682365084662</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +400,7 @@
     <MESSAGE value="Exceptions" />
     <MESSAGE value="testingSecond" />
     <MESSAGE value="TestingTaskApplication" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestingTaskApplication" />
+    <MESSAGE value="TestingTaskApplicationSecond" />
+    <option name="LAST_COMMIT_MESSAGE" value="TestingTaskApplicationSecond" />
   </component>
 </project>
