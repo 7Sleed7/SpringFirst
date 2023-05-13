@@ -10,6 +10,7 @@
         <module name="firstTask" />
         <module name="secondTask" />
         <module name="testingTask" />
+        <module name="mvc" />
         <module name="thridTask" />
       </profile>
     </annotationProcessing>
@@ -19,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mvc" options="-parameters" />
       <module name="secondTask" options="-parameters" />
       <module name="testingTask" options="-parameters" />
       <module name="thirdTask" options="-parameters" />
