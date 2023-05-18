@@ -4,34 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="commitSec">
-      <change afterPath="$PROJECT_DIR$/mvc/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/db.local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/MvcApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/model/dto/CreateUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/model/dto/PatchUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/model/dto/UpdateUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/model/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/01--01-05-2023--init.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/changelog-cumulative.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/create-users-table.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/insert-users.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/MvcApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/argument/UserServiceArg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/provider/UserProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/service/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="commitSecond">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/model/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/model/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/01--01-05-2023--init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/01--01-05-2023--init.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/changelog-cumulative.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/changelog-cumulative.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/insert-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/insert-users.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,42 +70,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/sleed/IdeaProjects/springApp/fifthTask/src&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;dfaeb10c24bfb0c5266451b3e277dba8&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "extract.method.default.visibility": "private",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "/Users/sleed/IdeaProjects/springApp/fifthTask/src",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.run.dashboard.notification": "false",
+    "spring.configuration.checksum": "4e6c613a31d599a13cdf2bd043ba5117"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;module&quot;,
-      &quot;directory&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module",
+      "directory",
+      "repository"
     ],
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.sleed.mvc.model.dto" />
@@ -129,7 +114,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest (1)">
+  <component name="RunManager" selected="Spring Boot.MvcApplication">
     <configuration name="All in fifthTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fifthTask" />
       <option name="PACKAGE_NAME" value="" />
@@ -267,7 +252,8 @@
       <workItem from="1683101285985" duration="10581000" />
       <workItem from="1683649035370" duration="1201000" />
       <workItem from="1683802939802" duration="4891000" />
-      <workItem from="1683962468504" duration="857000" />
+      <workItem from="1683962468504" duration="3313000" />
+      <workItem from="1683965798267" duration="9255000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1680904729170</created>
@@ -423,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683963088847</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="commitSecond">
+      <created>1683963343813</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1683963343813</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,6 +463,7 @@
     <MESSAGE value="TestingTaskApplicationThird" />
     <MESSAGE value="TestingTaskApplicationV2" />
     <MESSAGE value="commitSec" />
-    <option name="LAST_COMMIT_MESSAGE" value="commitSec" />
+    <MESSAGE value="commitSecond" />
+    <option name="LAST_COMMIT_MESSAGE" value="commitSecond" />
   </component>
 </project>

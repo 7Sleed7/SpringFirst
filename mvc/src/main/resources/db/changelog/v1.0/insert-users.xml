@@ -17,7 +17,7 @@
         <insert tableName="UserList">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="sleed"/>
-            <column  name="localDate"  value="17-05-07"/>
+            <column  name="localDate"  value="07-05-17"/>
         </insert>
     </changeSet>
 
@@ -25,7 +25,7 @@
         <insert tableName="UserList">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="sleed"/>
-            <column  name="localDate"  value="30-11-02"/>
+            <column  name="localDate"  value="02-11-30"/>
         </insert>
     </changeSet>
 
@@ -33,7 +33,7 @@
         <insert tableName="UserList">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="anton"/>
-            <column  name="localDate"  value="5-02-03"/>
+            <column  name="localDate"  value="03-02-2"/>
         </insert>
     </changeSet>
 

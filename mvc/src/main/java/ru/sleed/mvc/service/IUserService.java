@@ -1,7 +1,7 @@
 package ru.sleed.mvc.service;
 
+import ru.sleed.mvc.entity.User;
 import ru.sleed.mvc.model.dto.CreateUserDto;
-import ru.sleed.mvc.model.dto.PatchUserDto;
 import ru.sleed.mvc.model.dto.UpdateUserDto;
 import ru.sleed.mvc.model.dto.UserDto;
 

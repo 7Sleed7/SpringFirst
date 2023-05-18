@@ -2,8 +2,14 @@
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog ">
-    <changeSet id="init" author="7sleed7">
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.4.xsd">
+    <changeSet id="create-table-users" author="7sleed7">
+
+        <createSequence schemaName="public"
+                        incrementBy="1"
+                        minValue="1"
+                        sequenceName="users_seq" />
+
         <createTable tableName="UserList">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false" />

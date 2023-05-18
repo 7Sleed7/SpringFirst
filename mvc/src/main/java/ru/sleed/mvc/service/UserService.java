@@ -2,7 +2,6 @@ package ru.sleed.mvc.service;
 
 import ru.sleed.mvc.entity.User;
 import ru.sleed.mvc.model.dto.CreateUserDto;
-import ru.sleed.mvc.model.dto.PatchUserDto;
 import ru.sleed.mvc.model.dto.UpdateUserDto;
 import ru.sleed.mvc.model.dto.UserDto;
 import org.springframework.stereotype.Service;
@@ -15,20 +14,21 @@ public class UserService implements IUserService {
 
     private UserRepository userRepository;
 
+
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
 
     @Override
     public List<UserDto> findAllUsers() {
-        return userRepository.getAllUsers();
+        return UserDto.UserListToDto(userRepository.findAll());
     }
 
     @Override
     public UserDto findById(Long id) {
-        return userRepository.getAllUsers().stream()
+        return UserDto.userToDto(userRepository.findAll().stream()
                 .filter(s -> s.getId().equals(id))
-                .findFirst().orElseThrow(() -> new RuntimeException("ID NOT FOUND"));
+                .findFirst().orElseThrow(() -> new RuntimeException("ID NOT FOUND")));
     }
 
     @Override
@@ -56,10 +56,10 @@ public class UserService implements IUserService {
     @Override
     public UserDto updateUser(Long id, UpdateUserDto updateUserDto) {
         UserDto userDto;
-        if (userRepository.existById(id)) {
+        if (userRepository.existsById(id)) {
             userDto = UserDto.builder().build();
             if (!userDto.getUsername().startsWith("test")) {
-                userRepository.save(userDto);
+                userRepository.save(UserDto.dtoToUser(userDto));
             } else {
                 throw new RuntimeException("User is test");
             }

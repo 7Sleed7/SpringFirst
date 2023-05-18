@@ -1,19 +1,16 @@
 package ru.sleed.mvc.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import ru.sleed.mvc.model.dto.UserDto;
+import ru.sleed.mvc.entity.User;
 
 import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface UserRepository {
-    Optional<UserDto> findUserById(Long id);
+public interface UserRepository extends JpaRepository<User, Long>{
+    Optional<User> findUserById(Long id);
 
-    boolean existById(Long id);
+    boolean existsById(Long id);
 
-    void save(UserDto userDto);
-
-
-    List<UserDto> getAllUsers();
 }
