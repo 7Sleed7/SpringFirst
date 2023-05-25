@@ -58,23 +58,6 @@ public class UserController {
         return userDto;
     }
 
-//    @PatchMapping("/{id}")
-//    public UserDto patchUser(@PathVariable Long id,
-//                             @RequestBody PatchUserDto patchUserDto) {
-//            patchUserDto.forEach((key, value) -> {
-//                switch (key) {
-//                    case "username":
-//                        UserDto userDto = service.setUsername((String) value);
-//                        break;
-//                    case "dateOfBirth":
-//                        UserDto userDto1 = service.setDateOfBirth((LocalDate) value);
-//                        break;
-//                }
-//            )};
-//
-//        return existingUser;
-//    }
-
     @PatchMapping("/{id}")
     public UserDto updateUser(@PathVariable Long id,
                               @RequestBody PatchUserDto patchUserDto) {
