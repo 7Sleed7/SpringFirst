@@ -8,6 +8,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "UserList")
 @Data
 public class User {
 
@@ -24,5 +25,9 @@ public class User {
         this.id = id;
         this.username = username;
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public User() {
+
     }
 }

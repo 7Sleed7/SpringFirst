@@ -2,6 +2,7 @@ package ru.sleed.mvc.service;
 
 import ru.sleed.mvc.entity.User;
 import ru.sleed.mvc.model.dto.CreateUserDto;
+import ru.sleed.mvc.model.dto.PatchUserDto;
 import ru.sleed.mvc.model.dto.UpdateUserDto;
 import ru.sleed.mvc.model.dto.UserDto;
 
@@ -14,4 +15,10 @@ public interface IUserService {
     UserDto findById(Long id);
 
     UserDto updateUser(Long id, UpdateUserDto updateUserDto);
+
+    UserDto patchUser(Long id, PatchUserDto patchUserDto);
+
+    UserDto deleteUser(Long id);
+
+    List<UserDto> findBySurname(String surname);
 }

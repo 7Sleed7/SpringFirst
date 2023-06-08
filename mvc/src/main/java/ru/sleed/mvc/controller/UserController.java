@@ -3,6 +3,8 @@ package ru.sleed.mvc.controller;
 import jakarta.validation.Valid;
 
 import lombok.extern.log4j.Log4j2;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import ru.sleed.mvc.model.dto.CreateUserDto;
 import ru.sleed.mvc.model.dto.PatchUserDto;
@@ -10,6 +12,7 @@ import ru.sleed.mvc.model.dto.UpdateUserDto;
 import ru.sleed.mvc.model.dto.UserDto;
 import ru.sleed.mvc.service.IUserService;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -36,6 +39,7 @@ public class UserController {
     }
 
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public UserDto createUser(@Valid @RequestBody CreateUserDto createUserDto) {
         log.info("Get request for create user: {}", createUserDto);
 
@@ -76,9 +80,16 @@ public class UserController {
         }
     }
 
+    @GetMapping(params = {"surname"})
+    public List<UserDto> getUserParam(@RequestParam("surname") String surname){
+        List<UserDto> listBySurname = service.findBySurname(surname);
+        return listBySurname;
+    }
+
 
     @DeleteMapping("/{id}")
     public UserDto deleteUser(@PathVariable Long id) {
+        UserDto userDto = service.deleteUser(id);
         return null;
     }
 }

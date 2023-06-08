@@ -6,34 +6,28 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet  author="7sleed7"  id="insert-data-users" context="test">
-        <insert tableName="UserList">
+        <insert tableName="user_list">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="test"/>
-            <column  name="localDate"  value="01-01-01"/>
+            <column  name="date_of_birth"  value="01-01-01"/>
         </insert>
-    </changeSet>
 
-    <changeSet  author="7sleed7"  id="insert-data-users1" context="test">
-        <insert tableName="UserList">
+        <insert tableName="user_list">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="sleed"/>
-            <column  name="localDate"  value="07-05-17"/>
+            <column  name="date_of_birth"  value="07-05-17"/>
         </insert>
-    </changeSet>
 
-    <changeSet  author="7sleed7"  id="insert-data-users2" context="test">
-        <insert tableName="UserList">
+        <insert tableName="user_list">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="sleed"/>
-            <column  name="localDate"  value="02-11-30"/>
+            <column  name="date_of_birth"  value="02-11-30"/>
         </insert>
-    </changeSet>
 
-    <changeSet  author="7sleed7"  id="insert-data-users3" context="test">
-        <insert tableName="UserList">
+        <insert tableName="user_list">
             <column  name="id"  valueSequenceNext="users_seq"/>
             <column  name="username"  value="anton"/>
-            <column  name="localDate"  value="03-02-2"/>
+            <column  name="date_of_birth"  value="03-02-02"/>
         </insert>
     </changeSet>
 
