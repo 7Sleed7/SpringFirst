@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="testingPush">
-      <change afterPath="$PROJECT_DIR$/mvc/src/test/resources/application.yml" afterDir="false" />
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="ControllerTests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/01--01-05-2023--init.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/01--01-05-2023--init.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/create-users-table.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/create-users-table.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/insert-users.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/db/changelog/v1.0/insert-users.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/service/UserServiceTest.java" afterDir="false" />
     </list>
@@ -116,30 +106,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in mvc">
-    <configuration name="All in mvc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mvc" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MvcApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.sleed.mvc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.sleed.mvc" />
-      <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.MvcApplicationTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserControllerTest">
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mvc" />
       <extension name="coverage">
@@ -151,6 +118,38 @@
       <option name="PACKAGE_NAME" value="ru.sleed.mvc.controller" />
       <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.controller.UserControllerTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.deleteUser_whenUser_thanDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sleed.mvc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sleed.mvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="deleteUser_whenUser_thanDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.findUsersBySurname_whenUsers_thanFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.sleed.mvc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.sleed.mvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="findUsersBySurname_whenUsers_thanFind" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,17 +170,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.getUsers_whenUsersExists_thenReturnUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mvc" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.sleed.mvc.service.*" />
+          <option name="PATTERN" value="ru.sleed.mvc.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.sleed.mvc.service" />
-      <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.service.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="ru.sleed.mvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="getUsers_whenUsersExists_thenReturnUsers" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in mvc" />
-        <item itemvalue="JUnit.MvcApplicationTests" />
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.deleteUser_whenUser_thanDelete" />
+        <item itemvalue="JUnit.UserControllerTest.getUsers_whenUsersExists_thenReturnUsers" />
         <item itemvalue="JUnit.UserControllerTest.getUserByID_whenUserExists_thenReturnUser" />
+        <item itemvalue="JUnit.UserControllerTest.findUsersBySurname_whenUsers_thanFind" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +261,7 @@
       <workItem from="1685016284365" duration="625000" />
       <workItem from="1685016919413" duration="13154000" />
       <workItem from="1685616499218" duration="13716000" />
-      <workItem from="1686222534534" duration="1654000" />
+      <workItem from="1686222534534" duration="9950000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1680904729170</created>
@@ -438,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685012836603</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ControllerTests">
+      <created>1686224692179</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1686224692179</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,92 +495,7 @@
     <MESSAGE value="commitSecond" />
     <MESSAGE value="commitTestContainers" />
     <MESSAGE value="testingPush" />
-    <option name="LAST_COMMIT_MESSAGE" value="testingPush" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>141</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>153</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>155</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java</url>
-          <line>157</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mvc/src/main/java/ru/sleed/mvc/service/UserService.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="ControllerTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="ControllerTests" />
   </component>
 </project>

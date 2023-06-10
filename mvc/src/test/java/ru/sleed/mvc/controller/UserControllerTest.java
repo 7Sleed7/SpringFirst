@@ -5,6 +5,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import lombok.ToString;
+import org.junit.Before;
+import org.junit.Rule;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,13 +19,20 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.MediaType;
+import org.springframework.restdocs.JUnitRestDocumentation;
+import org.springframework.restdocs.RestDocumentationContextProvider;
+import org.springframework.restdocs.RestDocumentationExtension;
+import org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 import org.testcontainers.containers.PostgreSQLContainer;
 import org.testcontainers.junit.jupiter.Testcontainers;
 import ru.sleed.mvc.entity.User;
@@ -42,6 +51,16 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.springframework.restdocs.headers.HeaderDocumentation.headerWithName;
+import static org.springframework.restdocs.headers.HeaderDocumentation.responseHeaders;
+import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.linkWithRel;
+import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.links;
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.documentationConfiguration;
+import static org.springframework.restdocs.operation.preprocess.Preprocessors.*;
+import static org.springframework.restdocs.payload.PayloadDocumentation.*;
+import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
+import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -50,6 +69,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ExtendWith(MockitoExtension.class)
 @AutoConfigureMockMvc
+@ExtendWith({RestDocumentationExtension.class, SpringExtension.class})
 public class UserControllerTest {
 
     @Autowired
@@ -64,14 +84,15 @@ public class UserControllerTest {
     @Autowired
     private UserRepository repository;
 
-//    @Mock
-//    private IUserService userService;
-//
-//    @Mock
-//    private UserController userController;
-//
-//    @LocalServerPort
-//    private Integer port;
+    @BeforeEach
+    public void setUp(WebApplicationContext webApplicationContext,
+                      RestDocumentationContextProvider restDocumentation) {
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
+                .apply(documentationConfiguration(restDocumentation))
+                .alwaysDo(document("{method-name}"))
+                .build();
+    }
+
 
     @Test
     public void getUserByID_whenUserExists_thenReturnUser() throws Exception {
@@ -79,11 +100,15 @@ public class UserControllerTest {
         UserDto expectedUserDto = new UserDto(4L, "anton",
                 LocalDate.of(2002, Month.MARCH, 02));
 
-        MvcResult result = mockMvc.perform(get("/user/{id}",4)
+        MvcResult result = mockMvc.perform(RestDocumentationRequestBuilders.get("/user/{id}",4)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content()
                         .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andDo(document("getUserByID",
+                        pathParameters(
+                                parameterWithName("id").description("The id of the input to delete")
+                        )))
                 .andReturn();
 
         String contentAsString = result.getResponse().getContentAsString();
@@ -91,6 +116,7 @@ public class UserControllerTest {
         UserDto actualUserDto = objectMapper.readValue(contentAsString, UserDto.class);
 
         assertEquals(expectedUserDto, actualUserDto);
+
     }
 
     @Test
@@ -101,11 +127,12 @@ public class UserControllerTest {
         expectedUserDtoList.add(new UserDto(3L, "sleed", LocalDate.of(2030, Month.FEBRUARY, 11)));
         expectedUserDtoList.add(new UserDto(4L, "anton", LocalDate.of(2002, Month.MARCH, 02)));
 
-        MvcResult result = mockMvc.perform(get("/user")
+        MvcResult result = mockMvc.perform(RestDocumentationRequestBuilders.get("/user")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content()
                         .contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
+                .andDo(document("getUserList"))
                 .andReturn();
 
         String contentAsString = result.getResponse().getContentAsString();
@@ -121,13 +148,13 @@ public class UserControllerTest {
         UserDto expectedCreatedUserDto = new UserDto(1L,
             "posted", LocalDate.of(2011, Month.NOVEMBER, 11));
 
-        MvcResult posted = mockMvc.perform(post("/user")
+        MvcResult posted = mockMvc.perform(RestDocumentationRequestBuilders.post("/user")
                         .content(objectMapper.writeValueAsString(
                                 new UserDto(1L, "posted", LocalDate.of(2011, Month.NOVEMBER, 11))))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isCreated())
-//                .andExpect(MockMvcResultMatchers.jsonPath("$.id").exists())
+                .andDo(document("create-user"))
                 .andReturn();
 
         String contentAsString = posted.getResponse().getContentAsString();
@@ -142,13 +169,17 @@ public class UserControllerTest {
         UserDto expectedUpdatedUserDto = new UserDto(
                 4L, "updated", LocalDate.of(2012, Month.DECEMBER, 12));
 
-        MvcResult updated = mockMvc.perform(MockMvcRequestBuilders
+        MvcResult updated = mockMvc.perform(RestDocumentationRequestBuilders
                 .put("/user/{id}", 4)
                         .content(objectMapper.writeValueAsString(
                                 new UserDto(4L, "updated", LocalDate.of(2012, Month.DECEMBER, 12))))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                .andDo(document("update-user",
+                        pathParameters(
+                                parameterWithName("id").description("The id of the input to delete")
+                        )))
                 .andReturn();
 
         String contentAsString = updated.getResponse().getContentAsString();
@@ -163,13 +194,17 @@ public class UserControllerTest {
         UserDto expectedPatchedUserDto = new UserDto(
                 2L, "sleed", LocalDate.of(2012, Month.DECEMBER, 12));
 
-        MvcResult updated = mockMvc.perform(MockMvcRequestBuilders
+        MvcResult updated = mockMvc.perform(RestDocumentationRequestBuilders
                         .patch("/user/{id}", 2)
                         .content(objectMapper.writeValueAsString(
                                 new UserDto(2L, null, LocalDate.of(2012, Month.DECEMBER, 12))))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
+                .andDo(document("patch-user",
+                        pathParameters(
+                                parameterWithName("id").description("The id of the input to delete")
+                        )))
                 .andReturn();
 
         String contentAsString = updated.getResponse().getContentAsString();
@@ -182,8 +217,12 @@ public class UserControllerTest {
     @Test
     public void deleteUser_whenUser_thanDelete() throws Exception
     {
-        ResultActions actualResult = mockMvc.perform(MockMvcRequestBuilders.delete("/user/{id}", 1))
-                .andExpect(status().isOk());
+        ResultActions actualResult = mockMvc.perform(RestDocumentationRequestBuilders.delete("/user/{id}", 1))
+                .andExpect(status().isOk())
+                .andDo(document("crud-delete-example",
+                        pathParameters(
+                                parameterWithName("id").description("The id of the input to delete")
+                        )));
 
         Optional<User> userById = repository.findUserById(1L);
 
@@ -200,6 +239,7 @@ public class UserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andReturn();
+
 
         String contentAsString = actualList.getResponse().getContentAsString();
 

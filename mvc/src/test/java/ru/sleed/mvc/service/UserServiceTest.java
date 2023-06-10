@@ -1,6 +1,8 @@
 package ru.sleed.mvc.service;
 
 
+import org.junit.Rule;
+import org.springframework.restdocs.JUnitRestDocumentation;
 import ru.sleed.mvc.model.dto.CreateUserDto;
 import ru.sleed.mvc.model.dto.UpdateUserDto;
 import ru.sleed.mvc.model.dto.UserDto;
@@ -26,7 +28,6 @@ public class UserServiceTest {
     @InjectMocks
     private UserService service;
 
-
     @ParameterizedTest
     @MethodSource("ru.sleed.mvc.argument.UserServiceArg#getCreateUserDtoArgs")
     void createUser_whenValidUser_thanUser(CreateUserDto createUserDto,
@@ -35,16 +36,6 @@ public class UserServiceTest {
 
         assertEquals(expectedUserDto, actualUserDto);
     }
-
-//    @ParameterizedTest
-//    @MethodSource("ru.sleed.mvc.argument.UserServiceArg#getCreateUserDtoArgs")
-//    void updateUser_whenValidUser_thanUser(UpdateUserDto updateUserDto,
-//                                           UserDto expectedUserDto,
-//                                           Long id){
-//        UserDto actualUserDto = service.updateUser(id, updateUserDto);
-//
-//        assertEquals(expectedUserDto, actualUserDto);
-//    }
 
 
 }
