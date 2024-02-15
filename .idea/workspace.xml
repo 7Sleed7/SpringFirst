@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="ControllerTests">
+    <list default="true" id="8d5cbb87-6c41-44d2-886a-1c863008708c" name="Changes" comment="Gitignorecomm">
+      <change afterPath="$PROJECT_DIR$/mvc2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvc2/src/main/java/ru/sleed/mvc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/controller/UserControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/test/java/ru/sleed/mvc/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mvc/src/main/resources/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/thridTask/src/main/java/ru/sleed/thridtask/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +47,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="TestingTaskApplication" />
+        <option name="rewordedMessage" value="tests" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="8d41a3eade1717b61af1a186b2543fdf873b4995" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2O3ILXEfLhWPuwxliNRL4LOy8Pe" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -65,6 +75,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.UserControllerTest.executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
@@ -75,17 +86,26 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MvcApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ThridTaskApplication.executor&quot;: &quot;Run&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;/Users/sleed/IdeaProjects/springApp/fifthTask/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sleed/IdeaProjects/springApp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4e6c613a31d599a13cdf2bd043ba5117&quot;
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pathVariables&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4e6c613a31d599a13cdf2bd043ba5117&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;ChangesTree.GroupingKeys&quot;: [
@@ -103,10 +123,22 @@
       <recent name="ru.sleed.mvc.model.dto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mvc/src/main/resources/db" />
+      <recent name="$PROJECT_DIR$/mvc/src/main/resources" />
+      <recent name="$PROJECT_DIR$/mvc2/src/test" />
+      <recent name="$PROJECT_DIR$/mvc2/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserControllerTest">
+  <component name="RunManager" selected="Spring Boot.MvcApplication">
+    <configuration name="All in springApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springApp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mvc" />
       <extension name="coverage">
@@ -133,22 +165,6 @@
       <option name="PACKAGE_NAME" value="ru.sleed.mvc.controller" />
       <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.controller.UserControllerTest" />
       <option name="METHOD_NAME" value="deleteUser_whenUser_thanDelete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.findUsersBySurname_whenUsers_thanFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.sleed.mvc.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.sleed.mvc.controller" />
-      <option name="MAIN_CLASS_NAME" value="ru.sleed.mvc.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="findUsersBySurname_whenUsers_thanFind" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -215,7 +231,7 @@
       </method>
     </configuration>
     <configuration name="ThridTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="thridTask" />
+      <module name="siteWithDB" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.sleed.thridtask.ThridTaskApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,12 +240,20 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.All in springApp" />
         <item itemvalue="JUnit.UserControllerTest.deleteUser_whenUser_thanDelete" />
         <item itemvalue="JUnit.UserControllerTest.getUsers_whenUsersExists_thenReturnUsers" />
         <item itemvalue="JUnit.UserControllerTest.getUserByID_whenUserExists_thenReturnUser" />
-        <item itemvalue="JUnit.UserControllerTest.findUsersBySurname_whenUsers_thanFind" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-16.0.2-azul-16.0.2-f644763e9732-e6bb7e72" />
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24582b8d" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -262,6 +286,11 @@
       <workItem from="1685016919413" duration="13154000" />
       <workItem from="1685616499218" duration="13716000" />
       <workItem from="1686222534534" duration="9950000" />
+      <workItem from="1691008792286" duration="2421000" />
+      <workItem from="1694086772625" duration="1213000" />
+      <workItem from="1694795388541" duration="6587000" />
+      <workItem from="1705934518912" duration="12068000" />
+      <workItem from="1706098664934" duration="4935000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1680904729170</created>
@@ -497,5 +526,8 @@
     <MESSAGE value="testingPush" />
     <MESSAGE value="ControllerTests" />
     <option name="LAST_COMMIT_MESSAGE" value="ControllerTests" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/springApp$MvcApplication.ic" NAME="MvcApplication Coverage Results" MODIFIED="1695051665596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
